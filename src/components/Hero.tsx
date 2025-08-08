@@ -1,6 +1,7 @@
 export default function Hero() {
   return (
-    <section id="home" className="section bg-gradient-to-b from-slate-900 to-slate-950">
+    <section id="home" className="section relative overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 opacity-[0.06] [background:radial-gradient(circle_at_center,theme(colors.accent)_1px,transparent_1px)] [background-size:24px_24px]" />
       <div className="container-page grid items-center gap-10 md:grid-cols-2">
         <div className="space-y-6">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">

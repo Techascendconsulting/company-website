@@ -21,8 +21,9 @@ export default function SuccessStories() {
         <div className="grid gap-6 md:grid-cols-3">
           {STORIES.map((s, i) => (
             <figure key={i} className="card">
-              <blockquote className="text-lg">“{s.quote}”</blockquote>
-              <figcaption className="mt-4 text-sm text-muted">— {s.name}</figcaption>
+              <blockquote className="text-lg leading-relaxed">“{s.quote}”</blockquote>
+              <div className="mt-4 h-px bg-slate-800/60" />
+              <figcaption className="mt-3 text-sm text-muted">— {s.name}</figcaption>
             </figure>
           ))}
         </div>
