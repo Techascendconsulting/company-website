@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0f172a; /* slate-900 */
+  --color-foreground: #e2e8f0; /* slate-200 */
+  --color-muted: #94a3b8;      /* slate-400 */
+  --color-accent: #caff33;      /* lemon green */
+  --color-accent-foreground: #0b1324; /* dark slate */
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.container-page {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 sm:py-20 lg:py-24;
+}
+
+.section-title {
+  @apply text-3xl sm:text-4xl font-semibold tracking-tight;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 font-medium text-accent-foreground shadow-sm transition hover:brightness-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/40;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 rounded-lg border border-slate-700 px-5 py-3 text-foreground transition hover:bg-slate-800/60;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-800/60 bg-slate-900/40 p-6 shadow-sm backdrop-blur;
+}
